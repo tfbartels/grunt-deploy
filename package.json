@@ -1,0 +1,37 @@
+{
+  "name": "grunt-ftp-deploy",
+  "version": "1.0.0",
+  "description": "Rotinas para fazer deploy em ftp utilizando Grunt",
+
+  "scripts": {    
+    "deploy": "cross-env node_modules/grunt/bin/grunt clone && cross-env node_modules/grunt/bin/grunt deploy",
+    "deploy-prod": "cross-env node_modules/grunt/bin/grunt clone  && cross-env node_modules/grunt/bin/grunt deploy --env=producao"
+  },
+
+  "devDependencies": {     
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compress": "^1.5.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-ftp-push": "^1.2.1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfbartels/grunt-ftp-deploy.git"
+  },
+  "keywords": [
+    "grunt",
+    "ftp",
+    "deploy",
+    "zip"
+  ],
+  "author": "Thiago Bartels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tfbartels/grunt-ftp-deploy/issues"
+  },
+  "homepage": "https://github.com/tfbartels/grunt-ftp-deploy#readme"
+
+
+}
