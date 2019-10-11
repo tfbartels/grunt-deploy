@@ -1,1 +1,1 @@
-# grunt-deploy
+# grunt-ftp-deploy
